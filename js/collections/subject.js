@@ -3,7 +3,6 @@ App.Collections.Subject = Backbone.Collection.extend({
   model: App.Models.Subject
 });
 
-var subjectCollection = new App.Collections.Subject({
 var subj;
 
 function csvToJSON( csv ) {
@@ -36,3 +35,5 @@ function parseCSV(url, callback) {
 };
 
 parseCSV("source/subjects.csv", csvToJSON);
+
+var subjectCollection = new App.Collections.Subject({})
