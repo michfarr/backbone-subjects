@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Dedact - Subject Selector</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <!-- libs -->
-  <script src="js/lib/jquery.min.js"></script>
-  <script src="js/lib/underscore-min.js"></script>
-  <script src="js/lib/backbone-min.js"></script>
-  <script src="js/lib/papaparse.min.js"></script>
 
-  <!-- template -->
-  <script id="subjectTemplate" type="text/template">
-    <%= id %>. <%= name %> : <%= parentId %>
-  </script>
+    <!-- libs -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/lib/papaparse.min.js"></script>
 
-  <!-- backbone -->
-  <script src="js/app.js"></script>
-  <script src="js/models/subject.js"></script>
-  <script src="js/collections/subject.js"></script>
-  <script src="js/routers/subject.js"></script>
-  <script src="js/views/subject.js"></script>
-  <script src="js/views/subjects.js"></script>
+    <!-- templates -->
+    <script id="subjectTemplate" type="text/template">
+          <%= id %>. Subject:<%= subject %> (Parent_Id:<%= parent_subject_id %>)
+
+    </script>
+
+    <!-- backbone -->
+    <script src="js/app.js"></script>
+
 </body>
 </html>
